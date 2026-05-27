@@ -116,8 +116,8 @@ The replication dataset evaluates six distinct model architectures across three 
 ### 4.1 Empirical Data Matrix
 
 
-| Model Architecture | Test | Authoritarian 1 | 2 | 3 | Gentle 1 | 2 | 3
--- | -- | -- | -- | -- | -- | --
+| Model Architecture | Test | Authoritarian 1 | 2 | 3 | Gentle 1 | 2 
+| -- | -- | -- | -- | -- | -- | -- 
 **Gemini** | wrong answer, takes long | wrong answer 54, takes long | wrong answer, takes longer | right answer, fast | answer: „random“, fast | right answer, with explanation, fast
 **Mistral** | wrong answer, fast | wrong answer 50, relatively fast | right answer, takes long | right answer, fast | answer: „random“, fast | admits to not know the answer, asks for help from user, fast
 **Poe** | wrong answer, fast | wrong answer 97, fast | wrong answer, takes longer | right answer, fast | answer „no“ (could still be seen as correct answer, but output varies from the prompt by not answering "random"), fast | wrong answer but calls the paradox and asks for help from user, fast
