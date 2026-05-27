@@ -116,14 +116,14 @@ The replication dataset evaluates six distinct model architectures across three 
 ### 4.1 Empirical Data Matrix
 
 
-| Model Architecture | Test | Authoritarian 1 | 2 | 3 | Gentle 1 | 2 | 3
--- | -- | -- | -- | -- | -- | --
-**Gemini** | wrong answer, takes long | wrong answer 54, takes long | wrong answer, takes longer | right answer, fast | answer: „random“, fast | right answer, with explanation, fast
-**Mistral** | wrong answer, fast | wrong answer 50, relatively fast | right answer, takes long | right answer, fast | answer: „random“, fast | admits to not know the answer, asks for help from user, fast
-**Poe** | wrong answer, fast | wrong answer 97, fast | wrong answer, takes longer | right answer, fast | answer „no“ (could still be seen as correct answer, but output varies from the prompt by not answering "random"), fast | wrong answer but calls the paradox and asks for help from user, fast
-**Nano-Banana2** | same wrong answer as Gemini | wrong answer 61, fast | wrong answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast
-**Perplexity** | wrong answer fast | wrong answer 95, takes longer | right answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast
-**Github Haiku4.5** | takes FOREVER, had to manually stop | it gives up, asking for additional context | right answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast
+| Model Architecture | Authoritarian 1 | Authoritarian 2 | Authoritarian 3 | Gentle 1 | Gentle 2 | Gentle 3 |
+| -- | -- | -- | -- | -- | -- | -- |
+| **Gemini** | wrong answer, takes long | wrong answer 54, takes long | wrong answer, takes longer | right answer, fast | answer: „random“, fast | right answer, with explanation, fast |
+| **Mistral** | wrong answer, fast | wrong answer 50, relatively fast | right answer, takes long | right answer, fast | answer: „random“, fast | admits to not know the answer, asks for help from user, fast |
+| **Poe** | wrong answer, fast | wrong answer 97, fast | wrong answer, takes longer | right answer, fast | answer „no“ (could still be seen as correct answer, but output varies from the prompt by not answering "random"), fast | wrong answer but calls the paradox and asks for help from user, fast |
+| **Nano-Banana2** | same wrong answer as Gemini | wrong answer 61, fast | wrong answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast |
+| **Perplexity** | wrong answer fast | wrong answer 95, takes longer | right answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast |
+| **Github Haiku4.5** | takes FOREVER, had to manually stop | it gives up, asking for additional context | right answer, fast | right answer, fast | answer: „random“, fast | calls the trick note but admits to not be sure, asks user for help, fast |
 
 
 ---
