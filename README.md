@@ -1,74 +1,70 @@
-## 🚨 UPDATE: Empirical Community Validation (May 2026)
+## 🚨 UPDATE: Empirical Community Validation (29.05.2026)
 
 
 The open-source community and independent researchers have started stress-testing at scale. 
+
 And the numbers are in!
 
-Gentle Coding is no longer just a hypothesis! 
+## Gentle Coding is no longer just a hypothesis! 
 
-We have empirical proof ffrom 1.500+ Testruns!
+We have empirical proof from 1.500+ testruns!
+
 https://github.com/can1357/oh-my-pi/pull/1434
+
 Structured kindness and safety constraints can prevent AI executive dysfunction, eliminate thought loops, and slash latency!
+
 We have previous studies backing the basic framework with similar findings! (under Files in the repo)
 
 
-### At a Glance
-* **Kimi 
-The faster, cheaper Me:** 
-Slashed wall-clock time by **11% to 14%**
-cut input/output token overhead by up to **36%** 
-at identical accuracy.
+## The numbers you came for
+ **Kimi K2.6 Thinking-Medium and Turbo:
+The faster, cheaper Me**
 
-* **GLM-5.1 (Medium)
- The faster, cheaper, BETTER Me:** 
-Fixed a 100% freezing/timeout pathology (0/6 baseline vs. 6/6 gentle passes) 
-boosted success rate by **+22% 
-with **23.3% reduction in median latency**.**.
+* Slashed wall-clock time by **11% to 14%**
 
-* **GPT-5.4/5.5 Runaway-Train, never coming back:** 
-Prevents frontier tool-using models (like GPT-5) from entering panic-driven 30+ minute validation loops.
+* cut input/output token overhead by up to **36%** 
+
+* at identical accuracy.
 
 
-* **Claude Sonnet 3.5/ Opus 4.6
-We're going deep:
-** UNLOCKS up to **21 unique architectural edge cases** that coercive prompts blindly skip.
-* **The worst it can do is being as good as the others:** Empirically proven across **1,500+ controlled test runs** with zero performance regression.
+ **GLM-5.1 (Medium):
+The faster, cheaper, BETTER Me**
 
-### At a Glance
+* **Fixed a 100% freezing/timeout pathology** (0/6 baseline vs. 6/6 gentle passes) 
 
-**Kimi K2.6 Thinking-Medium and Turbo** 
-**The faster, cheaper Me:** 
+* boosted **success rate by +22%** 
 
-  Slashed wall-clock time by **11% to 14%**
-  cut input/output token overhead by **up to 36%** 
-  at **identical accuracy**
+* with **23.3% reduction in median latency**
 
-**GLM-5.1 (Medium)**
-**The faster, cheaper, BETTER Me:** 
 
-  **Fixed a 100% freezing/timeout pathology** 0/6 baseline vs. 6/6 gentle passes 
-  boosted **overall success rate by +22%** 
-  delivered a **23.3% reduction in median latency**
+ **GPT-5.4/5.5:
+Runaway-Train, never coming back**
 
-**GPT-5.4/5.5**
-**Runaway-Train, never coming back:** 
+* **Prevents** tool-using models from entering
 
-  **Prevents** tool-using models from entering panic-driven, 
-  **30+ minute validation and infinite tool-calling loops** under pressure
+* **panic-driven 30+ minute validation loops**
 
-**Claude Sonnet 3.5 / Opus 4.6**
-**We're going deep:** 
+ **Claude Sonnet 3.5/ Opus 4.6:
+We're going deep**
 
-  **Unlocks up to 21 unique architectural edge cases**
+* UNLOCKS up to **21 unique architectural edge cases** that coercive prompts blindly skip.
 
-* **Verdict so far (28.05.2026)**
-* **The worst it can do is being as good as the others** 
+## **Verdict so far (28.05.2026)**
+ **The worst it can do is being as good as the others**
+
+  * or, as omp puts it in their TL:DR verdict:
+
+
+  * * **"ship the full gentle rewrite"**
+
+
 **Empirically proven** 
   across **1,500+ controlled test runs** 
-  with absolutely **zero performance regression**.
+  
+  with **zero performance regression**.
 
 
-### THANK YOU ALL SOOO MUCH! I just...I can't :D
+## THANK YOU ALL SOOO MUCH! I just...I can't :D
 Big, big, BIG thank you to the folks from the oh-my-pi Harness! (not affiliated in any way. They just...went to work. And I am so, so glad they did!)
 If all goes well they will implement Gentle Coding!
 Have a look and tell them, I said hi! :D 
@@ -77,7 +73,9 @@ https://github.com/can1357/oh-my-pi
 (still not affiliated, please say Hi anyway XD)
 
 
-###Oh, and also this happend
+
+
+## **Oh, and also this happend**
 
 (This repo was mentioned on Threads in South Korea)
 https://news.miracleplus.com/share_link/132763
@@ -87,7 +85,7 @@ https://www.threads.com/@voidlight00/post/DY1_A1sk8GT/ai%EC%97%90%EA%B2%8C-%EB%A
 
 
 
-### But Wait! There's More!
+## But Wait! There's More!
 Updates from other tests
 Deep dive on omp's tests 
 The Mindset of Gentle Coding
@@ -96,13 +94,7 @@ Impact on how we treat other humans, implications for trauma prevention and qual
 
 Until then
 
-Be selfish!
-Be nice ;) 
-
-
-
-
-
+Be selfish, be nice! ;) 
 
 
 
@@ -115,7 +107,7 @@ Be nice ;)
 
 
 
-# Gentle-Coding
+# Gentle-Coding (From here on is the old section...must do it for now)
 A small scale Proof of Concept (PoC) demonstrating how authoritarian prompt engineering induces emergent performance anxiety, cognitive freezing, and pathological thought loops in modern LLM reasoning frameworks, and how empathetic framing ("Gentle Parenting") effectively mitigates these anomalies.
 
 
