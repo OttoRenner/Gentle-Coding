@@ -7,13 +7,16 @@ And the numbers are in!
 
 ## Gentle Coding is no longer just a hypothesis! 
 
-We have empirical proof from 1.500+ testruns!
+We have empirical proof from 1.500+ testruns based on the Gentle Coding core principals!
 
 https://github.com/can1357/oh-my-pi/pull/1434
 
+The findings line up and are combined with the empirical data from this study:
+https://github.com/SuitCatClub/kind-prompting-research
+
 Structured kindness and safety constraints can prevent AI executive dysfunction, eliminate thought loops, and slash latency!
 
-We have previous studies backing the basic framework with similar findings! (under Files in the repo)
+We have more studies and articles backing the basic framework with similar findings! (under Files in the repo)
 
 
 ## The numbers you came for
@@ -44,7 +47,7 @@ Runaway-Train, never coming back**
 
 * **panic-driven 30+ minute validation loops**
 
- **Claude Sonnet 3.5/ Opus 4.6:
+ **Claude Sonnet 4.6/ Opus 4.6:
 We're going deep**
 
 * UNLOCKS up to **21 unique architectural edge cases** that coercive prompts blindly skip.
