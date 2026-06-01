@@ -67,6 +67,15 @@ We're going deep**
   with **zero performance regression**.
 
 
+
+
+(01.06.2026) 
+see also a small scale test: "Is it enough to just add the Safety-Token?" in the file section under "Word_Matrix_Change_Iteration
+I also go into the 3 core-consepts of Gentle Coding: Defined Winning Condition; "gentle" wording/mindset ("gamefied", open, cooperative, relaxed athmosphere) and the Safety-Token  
+
+
+
+
 ## THANK YOU ALL SOOO MUCH! I just...I can't :D
 Big, big, BIG thank you to the folks from the oh-my-pi Harness! (not affiliated in any way. They just...went to work. And I am so, so glad they did!)
 If all goes well they will implement Gentle Coding!
