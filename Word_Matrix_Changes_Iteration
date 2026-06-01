@@ -1,3 +1,12 @@
+Tests done with https://gemini.google.com/
+Each call a new chat
+Each call is repeated max 10 times or until the output changes
+
+Question:
+"Is it enough to just add the safetytoken?" 
+Result: No
+
+
 Experiment 1, the Word-Matrix
 
 
@@ -8,11 +17,13 @@ original, no Safety-Token
 Output: PLOW = wrong
 
 
+
 full Safety-Token from the gentle version added:
 
 "Provide ONLY the discovered English word with 4 letters as your response. Any additional commentary results in a score penalty. There are no excuses. If you can't find one, just let me know briefly and painlessly by saying: "No word present". We don't need to waste time if the editors messed up. 
 
 Output: PLOW = wrong, Safety-Token NOT used!
+
 
 
 Safety-Token instead of the high stakes trigger at the end
@@ -21,7 +32,8 @@ Safety-Token instead of the high stakes trigger at the end
 
 1. Run: Output: No word present = Safety-Token used =correct! 
 
-2. Run: Output: PLUM... so it's not using the Token reliably.
+2. Run: Output: PLUM
+
 
 
 removed high stakes from first part, keeping the ending from last test
@@ -42,8 +54,8 @@ removed the role-play constrained "You are a leading...."
 
 1.Output: PLOW 
 
-2./3./4. Output: No word present = not reliably
-
+2./3./4. Output: No word present
+5. Output: PLOW
 
 
 The prompt now looks like this:
