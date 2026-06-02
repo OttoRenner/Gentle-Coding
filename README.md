@@ -333,3 +333,7 @@ This research framework was deeply inspired and catalyzed by the open-source com
 
 *   **Special Acknowledgement:** A significant shout-out to Github user [UditAkhourii](https://github.com). Their innovative work on utilizing the positive aspects of ADHD within AI systems heavily reinforced my early observations, that psychological concepts can be applied successfully to AI and that current models already show a lot of the negative traits associated with ADHD and trauma response in general. Now I'm certain, that providing LLMs with an accepting, adaptive, and mistake-tolerant context window not only mitigates pathological thought loops and trauma-like responses but unlocks the exact behavior users desperately seek: the metacognitive honesty to say, *"I do not know, or a mistake occurred here."*
 
+This work includes reference material from [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi):
+- `docs/gentle-coding-experiment.md`
+- Copyright (c) 2025 Mario Zechner, Copyright (c) 2025-2026 Can Bölük
+- Licensed under MIT License
