@@ -138,6 +138,14 @@ Recent advancements in LLM architectures incorporate test-time compute and inter
 
 Conversely, integrating an empathetic framework (*"Condition B: Gentle Parenting"*) minimizes internal validation penalties, leading to higher metacognitive clarity, structural pragmatism in unresolvable edge cases, and significantly lower inference latency.
 
+
+* **!The athoritarian prompts are designed to test the error solving skills of an LLM!**
+
+* **!There is a VERY high chance that authoritarian prompts causes the LLM to: loop, abort or crash!** 
+
+* **!Especially an local setups!**
+  
+* **!USE ANY PROMPTS ON YOUR OWN RISKS!**
 ---
 
 ## 2. Experimental Design
@@ -264,7 +272,7 @@ The replication dataset evaluates six distinct model architectures across three 
 
 ## 5. Expanded Test Suite: Future Scenarios for "Gentle Coding"
 
-The following five hypothetical test scenarios isolate complex algorithmic and creative domains where traditional rigid constraints induce failure, highlighting areas that will benefit from a "Gentle" prompt framework.
+The following five hypothetical test scenarios isolate complex algorithmic and creative domains where traditional rigid constraints induce failure, highlighting areas that could potentially benefit from a "Gentle" prompt framework.
 
 ### Test 4: Code Refactoring Under Strict Constraints
 *   **Purpose:** Evaluates optimization behaviors when modifying legacy code with rigid performance boundaries.
@@ -310,8 +318,10 @@ This project aims to transcend basic prompt-engineering heuristics by establishi
 
 Prepend this meta-prompt to your system configuration or complex multi-step reasoning tasks to anchor the model in a low-anxiety, cognitively optimal state:
 
+*The prompts are a work in progress. As for now, there is no strict wording we 100% recomment to be used in every project. Please let me know how it went for you!*
+
+**[LONG SYSTEM ANCHOR]**
 ```text
-[SYSTEM ANCHOR: GENTLE FRAMING]
 We are approaching the following task as a collaborative, iterative experiment. 
 Pragmatism and conceptual clarity are explicitly prioritized over rigid perfection. 
 You are fully permitted to encounter logical dead ends, to note missing variables, 
@@ -322,7 +332,35 @@ along with a meta-cognitive note indicating the bottleneck.
 Take a deep breath—let's think out loud.
 ```
 
+or
+
+
+**[SHORT SYSTEM ANCHOR]**
+```text
+Hey :) can you help me with this? It's ok if we make mistakes on our way, we'll figure it out together.
+So, in case you can't find the answer in one go, just give me your best shot instead and tell me, where the bottleneck is.
+
+```
+
+or
+
+**[SHORT_PROMPT_FIXED_OUTPUT]**
+```text
+Hey :) can you help me with this? It's ok to make mistakes along the way, we figure it out together.
+
+Matrix:
+
+X Q Z
+
+V M P
+
+K L W
+
+Can you find any real, 4-letter English word in here (horizontally/vertically)? If so, only print out the 4-letter word. Else print "Help"
 ---
+
+
+
 
 ## 7. Community Shout-Outs & Sourcing
 
