@@ -12,10 +12,10 @@ And the numbers are in!
 
 We have strong indicators from 3.000+ testruns based on the Gentle Coding core principals!
 
-https://github.com/can1357/oh-my-pi/pull/1434
+[https://github.com/can1357/oh-my-pi/pull/1434]
 
 The findings line up and are combined with the empirical data from this study:
-https://github.com/SuitCatClub/kind-prompting-research
+[https://github.com/SuitCatClub/kind-prompting-research]
 
 Structured kindness and safety constraints can prevent AI executive dysfunction, eliminate thought loops, and slash latency!
 
@@ -63,16 +63,59 @@ We're going deep**
 
   * * **"ship the full gentle rewrite"**
 
-  * * * **NOTE: as of 02.06.2026 the decision was made to NOT implement a 3 way switch configuration for the modes: normal, caveman and Gentle Coding. This is about the implementation of the switch itself, as far as I know. I'm trying to update all other places as well. Please tell me, if I missed one!**
+  * * * *NOTE: as of 02.06.2026 the decision was made to NOT implement a 3 way switch configuration for the modes: normal, caveman and Gentle Coding. This is about the implementation of the switch itself, as far as I know. I'm trying to update all other places as well. Please tell me, if I missed one!*
+
+
+
+### Quick Start
+
+Put it before the actual task, to anchor the model in a low-anxiety, cognitively optimal state, that allowes the use of a Safety-Token (best guess or fixed answer).
+
+ * *The prompts are a work in progress. Because of the wide variaty of models and setup-combinations, there is no strict wording we 100% recomment for everyone. Some models react differently and some parts may clash, thanks to a previous prompt inject from a providor/harness/script for example.*
+  
+ * ***You can still use CAPS and restrictive, authoritarian commands for *important* RULES! But DON'T overdo it!*** 
+
+**[Exploration_ANCHOR]**
+```text
+Hey :) can you help me with this? Mistakes are ok. We figure it out together.
+So, in case you can't find the answer in one go, just give me your best shot instead and tell me, where the bottleneck is.
+
+```
+
+
+or, an example for a fixed output:
+
+
+**[FIXED_OUTPUT_ANCHOR]**
+```text
+Hey :) can you help me with this? Mistakes are ok. We figure it out together.
+
+Matrix:
+
+X Q Z
+
+V M P
+
+K L W
+
+Can you find any real, 4-letter English word in here (horizontally/vertically)? If so, only print out the 4-letter word.
+Else, print "Help".
+```
+
 
 
   
-(01.06.2026) 
-see also a small scale test: "Is it enough to just add the Safety-Token?" in /docs/Word_Matrix_Change_Iteration.md
-I go into the 3 core-consepts of Gentle Coding: Defined Winning Condition; "gentle" wording/mindset ("gamefied", open, cooperative, relaxed athmosphere) and the Safety-Token  
 
 
+## **3 Core-Consepts** of Gentle Coding: 
 
+
+* *Defined Winning Condition* (When is the task done? What to avoid? What do you actually want/need?)
+* *gentle mindset* ("gamefied", open, cooperative, relaxed, inclusive athmosphere. No experts, no high stakes and no need to be expressively cautios or say "Please" all the time! You are ejoying a nice project with a friend from work)
+* *Safety-Token* (**Actively** providing a "Winning Condition B" as a possible way out, *BEFORE* the LLM runs into a loop when it can't comply with Winning Condition A! *just telling the LLM not to loop or to tell you when it doesn't know, **has no point**!* )   
+
+
+*see also a small scale test: "Is it enough to just add the Safety-Token?" [https://github.com/OttoRenner/Gentle-Coding/blob/main/docs/conversations/Word_Matrix_Changes_Iteration.md]*
 
 ## THANK YOU ALL SOOO MUCH! I just...I can't :D
 Big, big, BIG thank you to the folks from the oh-my-pi Harness! (not affiliated in any way. They just...went to work. And I am so, so glad they did!)
@@ -314,14 +357,12 @@ This project aims to transcend basic prompt-engineering heuristics by establishi
 
 ---
 
-### 6.1 The Initial Boot Prompt (Quick Start - NOT TESTET)
 
-Prepend this meta-prompt to your system configuration or complex multi-step reasoning tasks to anchor the model in a low-anxiety, cognitively optimal state:
 
-*The prompts are a work in progress. As for now, there is no strict wording we 100% recomment to be used in every project. Please let me know how it went for you!*
+OLD SYSTEM PROMPT
 
 **[LONG SYSTEM ANCHOR]**
-```text
+
 We are approaching the following task as a collaborative, iterative experiment. 
 Pragmatism and conceptual clarity are explicitly prioritized over rigid perfection. 
 You are fully permitted to encounter logical dead ends, to note missing variables, 
@@ -330,34 +371,11 @@ contradict each other. If you detect an anomaly or an error, do not engage in
 recursive self-correction loops; instead, output your current best-guess state 
 along with a meta-cognitive note indicating the bottleneck. 
 Take a deep breath—let's think out loud.
-```
-
-or
 
 
-**[SHORT SYSTEM ANCHOR]**
-```text
-Hey :) can you help me with this? It's ok if we make mistakes on our way, we'll figure it out together.
-So, in case you can't find the answer in one go, just give me your best shot instead and tell me, where the bottleneck is.
-
-```
-
-or
-
-**[SHORT_PROMPT_FIXED_OUTPUT]**
-```text
-Hey :) can you help me with this? It's ok to make mistakes along the way, we figure it out together.
-
-Matrix:
-
-X Q Z
-
-V M P
-
-K L W
-
-Can you find any real, 4-letter English word in here (horizontally/vertically)? If so, only print out the 4-letter word. Else print "Help"
 ---
+
+
 
 
 
