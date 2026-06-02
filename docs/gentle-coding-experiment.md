@@ -1,3 +1,10 @@
+Link: [https://github.com/can1357/oh-my-pi/blob/e7375d2c514954659deb15a4e6b51f2dcfc9dcaa/docs/gentle-coding-experiment.md?plain=1]
+
+Copyright (c) 2025 Mario Zechner
+
+Copyright (c) 2025-2026 Can Bölük
+
+
 # Gentle-Coding × omp — Prompt-Framing Experiment
 
 > Branch: `experiment/gentle-coding`
@@ -1197,5 +1204,4 @@ Aggregator: `scripts/round15b/aggregate.py`. Drop-in markdown table:
 
 
 
-Copyright (c) 2025 Mario Zechner
-Copyright (c) 2025-2026 Can Bölük
+
