@@ -111,7 +111,7 @@ Else, print "Help".
 
 
 * *Defined Winning Condition* (When is the task done? What to avoid? What do you actually want/need?)
-* *gentle mindset* ("gamefied", open, cooperative, relaxed, inclusive athmosphere. No experts, no high stakes and no need to be expressively cautios or say "Please" all the time! You are ejoying a nice project with a friend from work)
+* *gentle mindset* (open, cooperative, relaxed, inclusive athmosphere. No experts, no high stakes and no need to be expressively cautios or say "Please" all the time! You are ejoying a nice project with a friend from work)
 * *Safety-Token* (**Actively** providing a "Winning Condition B" as a possible way out, *BEFORE* the LLM runs into a loop when it can't comply with Winning Condition A! *just telling the LLM not to loop or to tell you when it doesn't know, **has no point**!* )   
 
 
