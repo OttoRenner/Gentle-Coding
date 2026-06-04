@@ -1,5 +1,3 @@
-## Star History
-
 <a href="https://www.star-history.com/?repos=OttoRenner%2FGentle-Coding&type=timeline&logscale=&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=OttoRenner/Gentle-Coding&type=timeline&theme=dark&legend=top-left" />
