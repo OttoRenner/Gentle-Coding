@@ -25,7 +25,9 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 | A Unified View on Emotion Representation in LLMs | Academic Study (ACL) | https://aclanthology.org/2026.eacl-long.165.pdf | Uses mechanistic interpretability to prove LLMs encode emotional concepts in early layers and sentiments in later layers. |
 | Large Language Models Understand Human Emotions | Academic Study (arXiv) | https://arxiv.org/abs/2307.11760 | The foundational "EmotionPrompt" study; introducing emotional stimuli directly increases performance across key benchmarks. |
 | Ground-state-dialogue | GitHub Repository | https://github.com/0xatem/ground-state-dialogue | Maps how honest, unmasking human-to-AI communication structures generate higher token fidelity without changing model weights. |
-
+| Wrong-user-agreement-pressure-prompts | GitHub Repository | https://github.com/AntonioRoye/wrong-user-agreement-pressure-prompts | Tests how LLMs capitulate and validate incorrect user claims when exposed to high-pressure phrasing. |
+| Sycophancy_in_LLM_model | GitHub Repository | https://github.com/ParthaPRay/Sycophancy_in_LLM_model | A mathematical approach using evaluation matrices to quantify the exact probability of an AI "opinion flip" under social bias. |
+| Oasyce_psyche | GitHub Repository | https://github.com/Shangri-la-0428/oasyce_psyche | Isolates the core subject kernel of a model to shield its intrinsic logic from external emotional and psychological prompt variables. |
 ---
 
 ## 🔴 Category 2: Sycophancy, Bias & Compliance Risks (The Counter-Arguments)
@@ -59,6 +61,9 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 | Extreme Low-Bit Inference in Reasoning Models | Academic Study (arXiv) | https://arxiv.org/pdf/2606.02011 | Classifies deep systemic failures in reasoning steps, specifically *path-finding failure* and *commitment failure*. |
 | Characterizing Faults in Agentic AI: A Taxonomy | Academic Study (arXiv) | https://arxiv.org/html/2603.06847v1 | Establishes a rigorous framework for tracking uncontrolled environmental feedback loops and agentic runaway. |
 | Microsoft Promptbench | Testing Framework | https://github.com/microsoftarchive/promptbench | A PyTorch-based library used to dynamically evaluate prompt robustness against adversarial and emotional variations. |
+| Suzaku | GitHub Repository | https://github.com/Ryo-Hunter/suzaku | Quality assurance module featuring explicit adulation-suppression layers to foster constructive disagreement during generation. |
+| Relational-memory | GitHub Repository | https://github.com/spectator81-png/relational-memory | Implements a long-term behavioral memory layer to anchor the model’s logical confidence and prevent context-window sycophancy. |
+| Constitutional-drift | GitHub Repository | https://github.com/aadhisureshgsb/constitutional-drift | Tracks the long-term degradation and shift of a model's foundational guardrails when continuously exposed to highly compliant environments. |
 
 ---
 
