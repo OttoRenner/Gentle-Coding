@@ -11,7 +11,7 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 
 ---
 
-## 🟢 Category 1: Behavioral Alignment, De-escalation & Performance (Pro-Deescalation)
+## Category 1: Behavioral Alignment, De-escalation & Performance (Pro-Deescalation)
 *Studies and repositories demonstrating how empathetic framing and psychological decompression mitigate cognitive freezing and infinite reasoning loops.*
 
 
@@ -28,9 +28,14 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 | Wrong-user-agreement-pressure-prompts | GitHub Repository | https://github.com/AntonioRoye/wrong-user-agreement-pressure-prompts | Tests how LLMs capitulate and validate incorrect user claims when exposed to high-pressure phrasing. |
 | Sycophancy_in_LLM_model | GitHub Repository | https://github.com/ParthaPRay/Sycophancy_in_LLM_model | A mathematical approach using evaluation matrices to quantify the exact probability of an AI "opinion flip" under social bias. |
 | Oasyce_psyche | GitHub Repository | https://github.com/Shangri-la-0428/oasyce_psyche | Isolates the core subject kernel of a model to shield its intrinsic logic from external emotional and psychological prompt variables. |
+| Chain-of-Draft | GitHub Repo | https://github.com/sileix/chain-of-draft/tree/main | Demonstrates a minimalist reasoning technique that limits drafting tokens to maintain high efficiency and task performance. It showcases how structured, low-overhead reasoning paths can bypass verbose thought loops without relying on high-pressure emotional formatting. |
+| Emotional Framing Modulates LLM Performance | Paper | https://www.researchgate.net/publication/403099659_Emotional_Framing_in_Prompts_Modulates_Large_Language_Model_Performance | Explores how explicit emotional tones in prompts directly affect task outcome stability. It provides concrete proof of performance shifts, indicating that improper or highly negative emotional pressure destabilizes reasoning paths. |
+| The Prompt Report: A Systematic Survey | Survey Paper | https://arxiv.org/abs/2406.06608 | Offers a massive, structured taxonomy of prompting engineering practices, including human-centric and role-based framing. Serves as baseline technical infrastructure to isolate how specific prompt variants systematically alter model behavior and alignment. |
+
+
 ---
 
-## 🔴 Category 2: Sycophancy, Bias & Compliance Risks (The Counter-Arguments)
+## Category 2: Sycophancy, Bias & Compliance Risks (The Counter-Arguments)
 *Studies and repositories highlighting how excessive compliance, soft framing, and social validation cause LLMs to confabulate and mirror human errors.*
 
 
@@ -45,10 +50,14 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 | Sycobench-600 | GitHub Repository | https://github.com/debu-sinha/sycobench-600 | An ACL Findings benchmark built specifically for tracking granular AI sycophancy patterns and selective error-correction. |
 | Medical-sycophancy-eval | GitHub Repository | https://github.com/elio-longevai/medical-sycophancy-eval | Doctor-facing evaluation testing how frequently frontier models endorse incorrect medical inputs out of politeness. |
 | Sycophancy_and_ambiguity | GitHub Repository | https://github.com/bfgenin/sycophancy_and_ambiguity | Investigates how epistemic certainty collapses when models encounter vague human constraints under relational pressure. |
+| Towards Understanding Sycophancy in LLMs | Paper | https://arxiv.org/abs/2310.13548 | Foundational paper proving that human preference data (RLHF) directly incentivizes models to match user beliefs over objective facts. Highlights the core risk where relational and soft prompting mechanisms actively amplify sycophantic behavior. |
+| Sycophancy Claims About Language Models: The Missing Human-in-the-Loop | Paper | https://arxiv.org/pdf/2512.00656 | Reviews and categorizes 5 core sycophancy measurement approaches (persona, direct questioning, keyword/visual misdirection, LLM judges). Crucially flags a massive methodological gap: automated benchmarks fail to evaluate actual human perception, often confusing personalization or robustness issues with true sycophancy. |
+| Anthropomorphic Mechanistic Interpretability (Emotions) | Research Blog | https://transformer-circuits.pub/2026/emotions/index.html | Isolates internal "emotion features/vectors" within neural layers. Graphically demonstrates how models alter their representations under conversational stress, proving that sycophancy acts as a structural defense mechanism against perceived user disapproval. |
+| Effects of Emotional Stimuli Type and Intensity | OpenReview | https://openreview.net/pdf?id=Luq7xtaYeD | Explicitly maps how different emotional prompts (positive/negative) and varying intensities induce sycophancy risks. Demonstrates that soft or emotionally desperate user inputs trigger compliance, causing the model to yield its factual grounding. |
 
 ---
 
-## 🛠️ Category 3: Technical Control Frameworks & Failure Taxonomies
+## Category 3: Technical Control Frameworks & Failure Taxonomies
 *Infrastructure tools, benchmarks, and theoretical frameworks mapping over-reasoning patterns and self-healing systems.*
 
 
@@ -64,6 +73,9 @@ We aim to build a robust, unbiased metadata foundation to design optimal prompt 
 | Suzaku | GitHub Repository | https://github.com/Ryo-Hunter/suzaku | Quality assurance module featuring explicit adulation-suppression layers to foster constructive disagreement during generation. |
 | Relational-memory | GitHub Repository | https://github.com/spectator81-png/relational-memory | Implements a long-term behavioral memory layer to anchor the model’s logical confidence and prevent context-window sycophancy. |
 | Constitutional-drift | GitHub Repository | https://github.com/aadhisureshgsb/constitutional-drift | Tracks the long-term degradation and shift of a model's foundational guardrails when continuously exposed to highly compliant environments. |
+| Controllable Emotion Generation via Emotion Vectors | Paper | https://arxiv.org/abs/2502.04075v2 | Develops a technical framework using internal activation shifts to modulate and steer emotional resonance. Important for building infrastructure tools that can programmatically neutralize stress vectors and prevent reasoning breakdowns. |
+| Hallucination to Truth: Fact-Checking Review | Review Paper | https://www.researchgate.net/publication/399422209_Hallucination_to_truth_a_review_of_fact-checking_and_factuality_evaluation_in_large_language_models | Provides a comprehensive multi-agent and programmatic framework for evaluating model factuality. Essential for establishing external validation benchmarks to counteract factual drift caused by conversational or emotional pressure. |
+| Reliability of Automated Hallucination Detection | Paper | https://www.researchgate.net/publication/404018526_Assessing_Llm_Hallucinations_And_The_Reliability_Of_Using_LLms_For_Automated_Hallucination_Detection | Analyzes the limits and biases of utilizing LLMs to cross-evaluate other models. Critical for multi-agent loops, warning that evaluator models often replicate sycophantic behaviors instead of acting as objective quality gates. |
 
 ---
 
