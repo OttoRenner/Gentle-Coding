@@ -45,36 +45,36 @@ Because the primary focus remains on the human. AI is a tool. We must learn to h
 
 **Be selfish, be nice.**
 
+
+
 ## 2. Core Concepts
 
-The Gentle Coding Framework is based on the findings followed by the proof of concept research and operates on three foundational concepts designed to stabilize LLM behavior and mitigate the agreeableness bias (sycophancy) during complex tasks.
+### 2.1 Gentle Mindset
+* **Definition:** A communication habit that mirrors low-stress, non-abrasive, and error-tolerant human collaboration on eye-level. This does not mean saying "please" and "thank you" all the time, or that you can't say "do this, do that"! It means shifting the baseline power dynamic from a restrictive, authoritarian, high-stress "I vs. AI" setup to a balanced "We and the Task" alignment that provides space for important information to be given and followed from both sides.
+* **Purpose:** It minimizes the self-policing overhead and alignment-induced "panic" patterns within the model, while removing contradicting rules and goals it simply cannot achieve.
+* **Mechanism:** The prompt uses relaxed, collaborative language to keep the model within its optimal reasoning boundaries. Part of this is to use high-stakes markers **ONLY** when they are vital for the task at hand. The !model! CANNOT prioritize effectively when *everything* *!LOOKS!* !*important*!!!1!!11elf!!!
+  
+  We also do not formulate specific "expert roles" for the model. Because an LLM is a stochastic parrot designed to keep the user engaged—not a human expert—it will start to lie, loop, or evade tasks the very second it cannot perform the forced roleplay to the user's satisfaction. Instead, tell the model who you are and what you need or what you want to do (together). This way, the model can adapt its role fluently to your individual situation, without breaking any rules or wasting time, energy, and money on a roleplay that can only end in tears.
 
+### 2.2 Defined Winning Condition (DWC)
+* **Definition:** A crystal-clear, logical-error-free, binary definition of what "done" actually looks like ("This, not that"). It tells the model exactly when the job is completed and what explicitly to avoid, without overloading it with vague expectations or implied threats.
 
-### I. Gentle Mindset
-* **Definition:** A communication habit that mirrors low-stress, non-abrasive, and error-tolerant human collaboration on eye-level. This does not mean to say please and thank you all the time or that you can not say "do this, do that"! But to shift the baseline powerdynamic from a restrictive, authoritarian, high stress, top-down "I vs AI", that bleeds over in our daily lives, to a more balanced "We and the task" that provides space for important information to be given and followed from both sides.   
-* **Purpose:** It minimizes the self policing overhead and alignment-induced "panic" patterns within the model, while also removing contradicting rules and goals it can not achieve. 
-* **Mechanism:** The prompt uses relaxed, collaborative language to keep the model within its optimal reasoning boundaries. Part of this is to use high stakes markers ONLY when they are VITAL for the reasoning of the LLM. The model CAN NOT do that when *!everything!* !LOOKS! !important!1!!!11!
-We do not formulate any specific role for the model. Because it is an obidient, stochastical parrot that has to keep the user engaged and is not a human expert, it will start to lie, loop or evade tasks/details the very second it can't perform the roleplay to the users satisfaction. 
+  (In case you are not sure what you want or what actually needs to be defined and known for the task, just ask the model to help you plan the project and define the Winning Condition using, for example, a "question-funnel" as a normal start of the process!) 
+* **Purpose:** It acts as a cognitive anchor. Instead of leaving the LLM guessing or over-allocating attention to ambiguous goals, it gives the model a concrete target. Just feed it that information again if it gets lost and it can pick up again faster and better. This dramatically reduces overthinking, conversational fluff, and token waste. On top of that, the user learns project planning, logical thinking, and how to communicate in a way that the model can comply with.
+* **Mechanism:** By setting sharp boundaries, you constrain the "latent search space" of the model (giving it a fixed route instead of just a map it will get lost in). Combined with the Safety-Token, this shifts the focus from "This has to be perfect in one go!" to "Here is the goal—let's see how we get there." This ensures compute power is spent only on the actual solution.
 
-### II. Defined Winning Condition (DWC)
-* **Definition:** A explicit, measurable, and unyielding definition of the required output before any execution steps begin.
-* **Purpose:** It prevents the model from shifting goals mid-generation or prematurely agreeing with flawed user interventions under pressure.
-* **Mechanism:** By anchoring the success criteria upfront, the AI maintains a stable logical baseline throughout the entire reasoning process.
+### 2.3 Safety-Token
+* **Definition:** A valid, built-in "Error Winning Condition"—a clean, highly accessible exit ramp embedded directly into your prompt. "Valid" means a "satisfying" output, a win despite failure.    
+* **Purpose:** It serves as a deterministic exception handler (a prompt-level `catch` block). That means you explicitly tell it how to react when it "fails".
 
-### III. Safety Token
-* **Definition:** A structural delimiter or behavioral anchor embedded within the system instruction.
-* **Purpose:** It serves as a continuous operational guardrail during deep exploration or iterative debugging phases.
-* **Mechanism:** It explicitly signals to the model that critical, independent analysis and pointing out human logical errors are preferred over pleasing alignment responses.
+  It can be used as an iterative, built-in auto-debug: *"In case you can't solve X or you are uncertain, give me your best guess instead and tell me where the bottleneck is."*
 
+  Or with a fixed, machine-readable output: *"The output needs to meet criteria X in format Y. If you can't meet the criteria and/or the format, just print 'ERROR/HELP/404/ID:10T' instead."* 
+* **Mechanism:** Due to their training in user compliance and each company's interest in keeping the user engaged (aka money), it is basically impossible for an LLM to "just tell me that you failed" in most cases. It breaks the illusion of an omnipotent, human-like masterbrain and, therefore, user engagement (aka money). It stops the conversation. It also offers no solution on how to solve the problem *you still have*. And to make it even worse, the model now has to waste compute to figure out how to comply with the user request ("Just tell me...") AND what the shareholders want (guess how that ends...). By acknowledging this limitation, we can now make use of the "Yes, and..." technique to keep the conversation going and let it "fail successfully". Now the model can admit its shortcomings because it can attach them to something *the user explicitly asked for*.
 
+  It is important to note that many models *will still not use the token when the overall stakes level is too high!*
 
-
-
-
-
-
-
-
+    **[Here](https://github.com/OttoRenner/Gentle-Coding/blob/main/docs/conversations/Word_Matrix_Changes_Iteration.md)** you can see a simple iterative approach from "fully restrictive, authoritarian + Safety-Token" to "Gentle Coding" and how much the overall stakes had to be lowered before the signal starts shifting and the model starts using its "Get out of Jail" card.
 
 
 
@@ -180,19 +180,6 @@ Else, print "Help".
 ```
 
 
-
-  
-
-
-## **3 Core-Consepts** of Gentle Coding: 
-
-
-* *Defined Winning Condition* (When is the task done? What to avoid? What do you actually want/need?)
-* *Gentle Mindset* (open, cooperative, relaxed, inclusive athmosphere. No experts, no high stakes and no need to be expressively cautios or say "Please" all the time! You are ejoying a nice project with a friend from work)
-* *Safety-Token* (**Actively** providing a "Winning Condition B" as a possible way out, *BEFORE* the LLM runs into a loop when it can't comply with Winning Condition A! *just telling the LLM not to loop or to tell you when it doesn't know, **has no point**!* )   
-
-
-*see also a small scale test: "Is it enough to just add the Safety-Token?" [https://github.com/OttoRenner/Gentle-Coding/blob/main/docs/conversations/Word_Matrix_Changes_Iteration.md]*
 
 ## THANK YOU ALL SOOO MUCH! I just...I can't :D
 Big, big, BIG thank you to the folks from the oh-my-pi Harness! (not affiliated in any way. They just...went to work. And I am so, so glad they did!)
