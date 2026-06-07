@@ -408,7 +408,7 @@ The following five hypothetical test scenarios isolate complex algorithmic and c
 
 ---
 
-## 6. Vision, Roadmap & Long-Term Goals
+## 5. Roadmap & Open TODOs
 
 This project aims to transcend basic prompt-engineering heuristics by establishing a systematic bridge between AI cognitive behavioral alignment and human neuro-psychology.
 
@@ -444,7 +444,7 @@ Take a deep breath—let's think out loud.
 
 
 
-## 7. Community Shout-Outs & Sourcing
+## 6. Credits & Community
 
 This research framework was deeply inspired and catalyzed by the open-source community:
 
