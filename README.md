@@ -170,7 +170,7 @@ Else, print "Help".
 
 ## 5. Roadmap & Open TODOs
 
-**For the TODOs, see the [CONTRIBUTING.md](https://github.com/OttoRenner/Gentle-Coding/blob/main/)**
+**Active tasks and the ongoing repository cleanup are under [Issues](https://github.com/OttoRenner/Gentle-Coding/issues/7)**
 
 1.  **Formal Scientific Study:** Initiate a rigorous, peer-reviewed study tracking token-level trajectories, internal reasoning heatmaps, and latency distributions across models comparing Authoritarian vs. Gentle conditions.
 2.  **A New Model Training Framework:** Develop a training methodology that incorporates "psychological safety margins" into Reinforcement Learning from Human Feedback (RLHF). This moves alignment away from punitive negative-reward mechanisms toward mistake-tolerant, exploratory validation.
