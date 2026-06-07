@@ -87,12 +87,9 @@ And the numbers are in!
 
 ## Gentle Coding is no longer just a "baseless" hypothesis! 
 
-We have strong indicators from 3.000+ testruns based on the Gentle Coding core principals!
+We have strong indicators from [3.000+ testruns](https://github.com/can1357/oh-my-pi/pull/1434) based on the Gentle Coding core principals!
 
-[https://github.com/can1357/oh-my-pi/pull/1434]
-
-The findings line up and are combined with the empirical data from this study:
-[https://github.com/SuitCatClub/kind-prompting-research]
+The findings line up and are combined with the empirical data from the ["Kind-Prompting" study](https://github.com/SuitCatClub/kind-prompting-research)
 
 Structured kindness and safety constraints can prevent AI executive dysfunction, eliminate thought loops, and slash latency!
 
