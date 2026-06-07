@@ -18,7 +18,7 @@ An open, community-driven meta-research hub on Human-AI Interaction. We work to 
 ### Navigation
 * [1. Why We Care](#1-why-we--care)
 * [2. Gentle Coding Concepts](#2-gentle-coding-concepts)
-* [3. Empirical Data Matrix](#3-empirical-data-matrix)
+* [3. Recent Findings](#3-recent-findings)
 * [4. Prompts](#4-prompts)
 * [5. Roadmap & Open TODOs](#5-roadmap--open-todos)
 * [6. Credits & Community](#6-credits--community)
@@ -79,56 +79,23 @@ Because the primary focus remains on the human. AI is a tool. We must learn to h
 
 
 
-## 3. Empirical Data Matrix
+## 3. Recent Findings
 
+Based on the [3.000+ testruns](https://github.com/can1357/oh-my-pi/pull/1434)
 
-The open-source community and independent researchers have started stress-testing at scale. 
+| Model/Setting | Observed Impact & Technical Behavior |
+| :--- | :--- |
+|glm-5.1freezing pathology | strict times out 6/6, gentle solves 6/6	|
+|glm-5-turbo bench (thinking off) | +3 task passes, −17% input, −37% wall	|
+|glm-5.1 bench (medium + high) | direction-positive on every metric at both levels; gentle-medium dominates baseline-high |	
+|kimi-thinking-medium bench | −12% in / −20% out / −14% wall at identical accuracy |
+|kimi-turbo high bench | −36% in / −23% out / −11% wall (direction-positive, CI crosses zero)|
+|kimi single-call probe | −17% mean / −27% median output tokens |
+|Sonnet 4.6 stakes-only (N=30) | −17% mean out, −23% mean wall |
+|Sonnet 4.6 | neutral at N=100 |
+|Opus 4.6 | neutral at N=100 |
+|GPT-5.5 | neutral at N=100 |
 
-And the numbers are in!
-
-## Gentle Coding is no longer just a "baseless" hypothesis! 
-
-We have strong indicators from [3.000+ testruns](https://github.com/can1357/oh-my-pi/pull/1434) based on the Gentle Coding core principals!
-
-The findings line up and are combined with the empirical data from the ["Kind-Prompting"](https://github.com/SuitCatClub/kind-prompting-research) study.
-
-Structured kindness and safety constraints can prevent AI executive dysfunction, eliminate thought loops, and slash latency!
-
-We have more studies and articles backing the basic framework with similar findings! (under Files in the repo)
-
-
-## The numbers you came for
- **Kimi K2.6 Thinking-Medium and Turbo:
-The faster, cheaper Me**
-
-* Slashed wall-clock time by **11% to 14%**
-
-* cut input/output token overhead by up to **36%** 
-
-* at identical accuracy.
-
-
- **GLM-5.1 (Medium):
-The faster, cheaper, BETTER Me**
-
-* **Fixed a 100% freezing/timeout pathology** (0/6 baseline vs. 6/6 gentle passes) 
-
-* boosted **success rate by +22%** 
-
-* with **23.3% reduction in median latency**
-
-
- **GPT-5.4/5.5:
-Runaway-Train, never coming back**
-
-* **Prevents** tool-using models from entering
-
-* **panic-driven 30+ minute validation loops**
-
- **Claude Sonnet 4.6/ Opus 4.6:
-We're going deep**
-
-* UNLOCKS up to **21 unique architectural edge cases** that coercive prompts blindly skip.
 
 ## 4. Prompts
 
