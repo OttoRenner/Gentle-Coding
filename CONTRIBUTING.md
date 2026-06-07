@@ -1,6 +1,6 @@
 # Contributing to the Meta-Research Framework
 
-Hey! It’s amazing that you're looking to help out. No matter your profession or knowledge base, every single perspective is incredibly valuable.
+It’s amazing that you're looking to help out. No matter your profession or knowledge base, every single perspective is incredibly valuable.
 
 ### Core Philosophy
 Just like the "Gentle Coding" mindset, we believe in a relaxed, cooperative, and mistake-tolerant atmosphere. 
