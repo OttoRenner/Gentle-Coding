@@ -130,18 +130,6 @@ We're going deep**
 
 * UNLOCKS up to **21 unique architectural edge cases** that coercive prompts blindly skip.
 
-## **Verdict so far (28.05.2026)**
- **The worst it can do is being as good as the others**
-
-  * or, as omp puts it in their TL:DR verdict from the testruns:
-
-
-  * * **"ship the full gentle rewrite"**
-
-  * * * *NOTE: as of 02.06.2026 the decision was made to NOT implement a 3 way switch configuration for the modes: normal, caveman and Gentle Coding. This is about the implementation of the switch itself, as far as I know. I'm trying to update all other places as well. Please tell me, if I missed one!*
-
-
-
 ## 4. Prompts
 
 Put it before the actual task, to anchor the model in a low-anxiety, cognitively optimal state, that allowes the use of a Safety-Token (best guess or fixed answer).
@@ -182,34 +170,13 @@ Else, print "Help".
 
 ## 5. Roadmap & Open TODOs
 
+**For the TODOs, see the [CONTRIBUTING.md](https://github.com/OttoRenner/Gentle-Coding/blob/main/)**
+
 1.  **Formal Scientific Study:** Initiate a rigorous, peer-reviewed study tracking token-level trajectories, internal reasoning heatmaps, and latency distributions across models comparing Authoritarian vs. Gentle conditions.
 2.  **A New Model Training Framework:** Develop a training methodology that incorporates "psychological safety margins" into Reinforcement Learning from Human Feedback (RLHF). This moves alignment away from punitive negative-reward mechanisms toward mistake-tolerant, exploratory validation.
 3.  **The Initial Boot Prompt:** Establish a plug-and-play meta-prompt designed to instantly stabilize reasoning models before complex tasks begin (see section 6.1).
 4.  **Training a "Gentle-Prompt-Enhancer" Model:** Fine-tune a lightweight model tasked exclusively with parsing harsh, demanding user inputs and translating them into emotionally regulated, cognitively optimal "Gentle" prompt variants before inference.
 5.  **Bidirectional Knowledge Transfer (AI to Human Systems):** Translate these empirical AI findings back into human contexts. By proving that rigid, punitive, and perfectionist frameworks actively degrade the cognitive capacity of an intelligent system, I aim to provide data-backed evidence to dismantle forced masking and hyper-vigilance in human educational and corporate spaces—freeing critical cognitive resources for individuals managing Trauma, PTSD, and Neurodivergence.
-
----
-
-
-
-OLD SYSTEM PROMPT
-
-**[LONG SYSTEM ANCHOR]**
-
-We are approaching the following task as a collaborative, iterative experiment. 
-Pragmatism and conceptual clarity are explicitly prioritized over rigid perfection. 
-You are fully permitted to encounter logical dead ends, to note missing variables, 
-and to declare a sub-task mathematically or structurally unresolvable if constraints 
-contradict each other. If you detect an anomaly or an error, do not engage in 
-recursive self-correction loops; instead, output your current best-guess state 
-along with a meta-cognitive note indicating the bottleneck. 
-Take a deep breath—let's think out loud.
-
-
----
-
-
-
 
 
 
@@ -228,6 +195,10 @@ This research framework was deeply inspired and catalyzed by the open-source com
 * [oldschoola](https://github.com/oldschoola): A member of the [oh-my-pi](https://github.com/can1357/oh-my-pi) coding agent community, who initiated and ran the first [research PR](https://github.com/can1357/oh-my-pi/pull/1434) based on the findings of the original Gentle Coding Proof of Concept—featuring 3000+ evaluation calls! It was amazing to see the interim results of the 15 test rounds coming in, and this line will always hold a special place in my heart:
 
   *"TL;DR verdict — ship the full gentle rewrite."*
+
+  *NOTE: as of 02.06.2026 the decision was made to NOT implement a 3 way switch configuration for the modes: normal, caveman and Gentle Coding. This is about the implementation of the switch itself, as far as I know. I'm trying to update all other places as well. Please tell me, if I missed one!*
+    
+## **References**
 
 * This work includes reference material from [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi):
 - `docs/gentle-coding-experiment.md`
