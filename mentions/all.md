@@ -14,10 +14,10 @@ Today's Prompt Engineering: Fastest-Growing Projects — May 29, 2026
 [https://pullrepo.com/report/todays-prompt-engineering-fastest-growing-projects-may-29-2026]
 
 
-South Koread Threads
+South Korean Threads
 [https://www.threads.com/@voidlight00/post/DY1_A1sk8GT]
 
-Chinese cutting edge Tech webside
+Chinese cutting edge Tech website
 [https://news.miracleplus.com/share_link/132763]
 
 Hype - ML/AI News "Stop traumatizing...." Reddit post on place 29 for Github, HF, Reddit and Replicate combined; 3. place in Reddit section! (02.06.2026)  

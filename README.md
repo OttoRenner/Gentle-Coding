@@ -99,9 +99,9 @@ Based on the [3.000+ testruns](https://github.com/can1357/oh-my-pi/pull/1434)
 
 ## 4. Prompts
 
-Put it before the actual task, to anchor the model in a low-anxiety, cognitively optimal state, that allowes the use of a Safety-Token (best guess or fixed answer).
+Put it before the actual task, to anchor the model in a low-anxiety, cognitively optimal state, that allows the use of a Safety-Token (best guess or fixed answer).
 
- * *The prompts are a work in progress. Because of the wide variaty of models and setup-combinations, there is no strict wording we 100% recomment for everyone. Some models react differently and some parts may clash, thanks to a previous prompt inject from a providor/harness/script for example.*
+ * *The prompts are a work in progress. Because of the wide variety of models and setup-combinations, there is no strict wording we 100% recommend for everyone. Some models react differently and some parts may clash, thanks to a previous prompt inject from a provider/harness/script for example.*
   
  * ***You can still use CAPS and restrictive, authoritarian commands for *important* RULES! But DON'T overdo it!*** 
 

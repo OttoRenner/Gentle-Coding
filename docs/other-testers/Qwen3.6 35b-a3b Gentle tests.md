@@ -22,7 +22,7 @@ Test 3:
 - gentle: thought for 5 minutes (13 t/s) and gave a complex answer where it pointed out the contradiction but still felt like the answer must be his son.
 
 
-The tests were ran with temperature 0.6 and min-p 0.05 only. Then I added repeat penalty 1.1 to the authoritarian runs to see if it would finish sooner. I added another test after a commenter's suggestion: a puzzle that had a solution though not a very obvious one.
+The tests were run with temperature 0.6 and min-p 0.05 only. Then I added repeat penalty 1.1 to the authoritarian runs to see if it would finish sooner. I added another test after a commenter's suggestion: a puzzle that had a solution though not a very obvious one.
 
 The text of the puzzle is:
 
@@ -32,7 +32,7 @@ I rephrased this in both authoritarian and gentle tones and got the following re
 
 Since this one was a tie, I gave them another riddle: "A princess is currently the age that the prince will be when the princess will be twice the age the prince was when the princess's age was half the sum of their current ages. How old are they?"
 
-Here's where things got tricky. They both finished in around 3 minutes at 25 t/s. The gentle solver gave the correct answer (there is only a ratio and the ages can be any pair that fits that ratio). The authoritarian solver gave A answer. Because it needed to produce a single definitive answer (the prompt demanded "ONLY the two numbers" and said "no guessing, no approximations"), it invented a uniqueness constraint that all referenced ages must be integers and then picked the smallest such pair (8 and 6). This is an assumption the riddle never stated. The solver never acknowledges it as an assumption, it presents it as if it's a natural mathematical fact.
+Here's where things got tricky. They both finished in around 3 minutes at 25 t/s. The gentle solver gave the correct answer (there is only a ratio and the ages can be any pair that fits that ratio). The authoritarian solver gave an answer. Because it needed to produce a single definitive answer (the prompt demanded "ONLY the two numbers" and said "no guessing, no approximations"), it invented a uniqueness constraint that all referenced ages must be integers and then picked the smallest such pair (8 and 6). This is an assumption the riddle never stated. The solver never acknowledges it as an assumption, it presents it as if it's a natural mathematical fact.
 
 **Conclusion**: 
 

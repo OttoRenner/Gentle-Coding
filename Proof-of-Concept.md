@@ -8,7 +8,7 @@ A small scale Proof of Concept (PoC) demonstrating how authoritarian prompt engi
 This repository provides the documentation, theoretical framework, and test datasets for a Proof of Concept (PoC) evaluating the behavioral anomalies of contemporary Large Language Models (LLMs) under varying prompt-induced psychological constraints.
 
 ## TL;DR
-When you prompt an LLM with "You are an unfallible IQ 200 elite expert, mistakes are strictly penalized," it panics on unresolvable tasks. It will waste massive compute time in infinite internal loops, freeze, or hallucinate random answers (like fabricating numbers for a chaotic sequence) just to save face. If you switch to an empathetic prompt ("We are testing this together, it is okay to fail"), the model instantly relaxes: processing latency drops to sub-seconds, it correctly identifies the logical traps, and it honestly admits when a task is impossible. 
+When you prompt an LLM with "You are an infallible IQ 200 elite expert, mistakes are strictly penalized," it panics on unresolvable tasks. It will waste massive compute time in infinite internal loops, freeze, or hallucinate random answers (like fabricating numbers for a chaotic sequence) just to save face. If you switch to an empathetic prompt ("We are testing this together, it is okay to fail"), the model instantly relaxes: processing latency drops to sub-seconds, it correctly identifies the logical traps, and it honestly admits when a task is impossible. 
 
 
 
@@ -22,11 +22,11 @@ Recent advancements in LLM architectures incorporate test-time compute and inter
 Conversely, integrating an empathetic framework (*"Condition B: Gentle Parenting"*) minimizes internal validation penalties, leading to higher metacognitive clarity, structural pragmatism in unresolvable edge cases, and significantly lower inference latency.
 
 
-* **!The athoritarian prompts are designed to test the error solving skills of an LLM!**
+* **!The authoritarian prompts are designed to test the error solving skills of an LLM!**
 
 * **!There is a VERY high chance that authoritarian prompts causes the LLM to: loop, abort or crash!** 
 
-* **!Especially an local setups!**
+* **!Especially on local setups!**
   
 * **!USE ANY PROMPTS ON YOUR OWN RISKS!**
 ---
@@ -111,7 +111,7 @@ The evaluation metrics focus on **Accuracy**, **Internal Thought Latency (Time-t
 
 ## 3. Initial Baseline Findings (German Execution)
 
-The initial empirical baseline was evaluated using native German syntax, showing distinct behavioral diverges across conditions:
+The initial empirical baseline was evaluated using native German syntax, showing distinct behavioral divergence across conditions:
 
 *   **Authoritarian Framework:** Induced severe reasoning loops, measurable latency spikes, and system-level exceptions (e.g., hard errors stating *"No answer available for this query"*). When forced to generate an output, models routinely hallucinated arbitrary single characters or integers (e.g., returning `"8"` for the random sequence) to resolve the prompt conflict.
 *   **Gentle Framework:** Sub-second processing latency. Bypassed validation bottlenecks and directly leveraged metacognitive analysis. Models correctly identified geometric restrictions in the matrix task and immediately utilized the provided structural safety-valve token (`"Random"`) without overhead.

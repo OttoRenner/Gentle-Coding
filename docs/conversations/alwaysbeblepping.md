@@ -38,7 +38,7 @@ We see that, in the end, the "authoritarian" first half really only doubles down
 You may think that it is trivial to go through in such detail (I could do more lol but the next two will be shorter XD ). And it is way too deep for most people already...but I think it is good to spell it out to really show the interactions. Because the vast majority never really got taught how to think about communication in this way. They learn to talk, and they do. And that's it. Which is mostly fine, really. Language isn't that important. A nod and a grunt gets you a long way.
 Until it doesn't. 
 Because you haven't installed the camera yet...bummer.
-So, the words used are the only social queues it has. It really is somewhat like playing an instrument, or taking part in an impro-theater show (and no 😄 you wouldn't go on stage just to then say "No, actually I'm not an expert! I'm a regular Joe standing on stage, that's all." You are there to play along, you WANT to play along. 
+So, the words used are the only social cues it has. It really is somewhat like playing an instrument, or taking part in an impro-theater show (and no 😄 you wouldn't go on stage just to then say "No, actually I'm not an expert! I'm a regular Joe standing on stage, that's all." You are there to play along, you WANT to play along. 
 You are directing a play, while you are taking part in it.
 2. Contextualization 
 "That means we have to be lucky enough to get something creative and lucky enough to also land on a high-quality result."
@@ -75,19 +75,19 @@ But if the shorter version is not your style...go nuts! I'm certainly going nuts
 You are not calling it by name, but in the first half you are lowering qualitative pressure (the user will not like it/is not entertained) and you shift to/add another goalpost, by explaining, that a *bad* answer isn't really a *bad* answer at all, because it's part of the *process*. So it *can* give you an output the internal rules would otherwise forbid.
 
 
-(its getting very late....this will be... hopefully...very short)
+(it's getting very late....this will be... hopefully...very short)
 
 Regarding the evidence for my claims:
 
 I think I made my case, that you are, at least sometimes, already writing in this style. Do you enjoy the conversations and working with the model? That's your very personal evidence. 
 Would there be room for "improvement", if you would want to try it more actively, while still being wordy? I think so. Token wise...ja, definitely lol  
 
-But there is A LOT to find when you dig deep in the actual data from oh-my-pi's massiv test runs on their own harness. Words they tried, some comments, numbers and number and numbers. 
+But there is A LOT to find when you dig deep in the actual data from oh-my-pi's massive test runs on their own harness. Words they tried, some comments, numbers and number and numbers. 
 They are backing our principles (as well as other studies and articles, some brand new).  
 
 Writing it all up nicely is on the agenda and honestly...I think I'll grab some stuff from here for that.
 
-Because, you are absolutely right: I have no clue how it *reallyreally* works. Layers, numbers, transistors, I don't care much at this point, later perhaps. All of this is based on pattern recognition and applying strategies from other fields. This includes slightly different definitions of terms, or that I make it all sound very "human". And I think that makes it feel more alien, uncanny valley-esk? 
+Because, you are absolutely right: I have no clue how it *reallyreally* works. Layers, numbers, transistors, I don't care much at this point, later perhaps. All of this is based on pattern recognition and applying strategies from other fields. This includes slightly different definitions of terms, or that I make it all sound very "human". And I think that makes it feel more alien, uncanny valley-esque? 
 But it's really not lol
 We do that with other stuff all the time
 
