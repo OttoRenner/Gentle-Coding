@@ -108,7 +108,7 @@ Put it before the actual task, to anchor the model in a low-anxiety, cognitively
 **[Exploration_ANCHOR]**
 ```text
 Hey :) can you help me with this? Mistakes are ok. We figure it out together.
-So, in case you can't find the answer in one go, just give me your best shot instead and tell me, where the bottleneck is.
+So, in case you can't find the answer in one go, just give me your best guess instead and tell me, where the bottleneck is.
 
 ```
 
