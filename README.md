@@ -7,8 +7,10 @@
 </a>
 
 
-## Disclaimer
-Texts were generated and edited with the help of AI. (And yes, there is some cleanup to do. Want to help? :D)
+## Discl-AI-mer
+I totally understand the comments I get for the AI generated texts. I'm German and I have ADHD and everything is just...so, so much right now. If it weren't for the AI generated/summarized texts, this repo wouldn't exist at all. It would be just another dead idea. But now it is something real. I've learned so much and talked to sooo many lovely peeps! The repo was mentioned in China and South Korea(!!). I feel more connected to all of you, thanks to AI. But we **are** working on rewriting it! In case you see a spot that desperately needs some rewrite, please open an Issue and let me know! Or, pick up your virtual pen and help me de-slop it :) 
+
+All sections were structured by me and all texts are based on long conversations and original sources and what you see already was edited by me during the generating process. Nothing in this repo is 0-shot generated without vetting. Yes, I understand what the titles/texts mean (or what they are intended to mean lol). Please, see them as some kind of placeholders. The message is there, it just needs some love and care. As we all do 😘) *BTW this is how I write. Do you really want to read through a full repo of **this**?* *oh, I forgot one thing: I kinda like a good slogan or a catchy phrase? lol I'm also a musician and writer with a BA German and sometimes I just...can not *not* use a corny line when the goblin in the back of my head is screaming **!JUST!DO!IT!** (like the title of this section XD) So, some of the corny/catchy titles or winding sentences are truely my own. I do hope, they are the better ones*
 
 # Gentle Coding Framework
 
