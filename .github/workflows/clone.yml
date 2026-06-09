@@ -25,6 +25,8 @@ jobs:
 
       - name: create gist and download previous count
         id: set_id
+        env:
+         GH_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: |
           if gh secret list | grep -q "GIST_ID"
           then
