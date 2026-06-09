@@ -6,6 +6,8 @@
  </picture>
 </a>
 
+[![GitHub Traffic](https://img.shields.io/badge/dynamic/json?color=success&label=Views&query=count&url=https://gist.githubusercontent.com/OttoRenner/3be6c3c27336ecf7d3d09a7b277687b1/raw/traffic.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+
 
 ## Discl-AI-mer
 I totally understand the comments I get for the AI generated texts. I'm German and I have ADHD and everything is just...so, so much right now. If it weren't for the AI generated/summarized texts, this repo wouldn't exist at all. It would be just another dead idea. But now it is something real. I've learned so much and talked to sooo many lovely peeps! The repo was mentioned in China and South Korea(!!). I feel more connected to all of you, thanks to AI. But we **are** working on rewriting it! In case you see a spot that desperately needs some rewrite, please open an Issue and let me know! Or, pick up your virtual pen and help me de-slop it :) 
