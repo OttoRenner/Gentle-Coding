@@ -52,6 +52,10 @@ jobs:
       - name: update clone.json
         run: |
           curl https://raw.githubusercontent.com/MShawon/github-clone-count-badge/master/main.py > main.py
+             # NEU: Falls die alte Datei leer ist oder kein 'clones' enthält, Struktur vorgeben
+          if [ ! -f clone_before.json ] || ! grep -q '"clones"' clone_before.json; then
+            echo '{"count": 0, "uniques": 0, "clones": []}' > clone_before.json
+          fi
           python3 main.py
 
       - name: Update gist with latest count
