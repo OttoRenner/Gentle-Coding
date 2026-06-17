@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Apple Foraging Simulation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f3f4;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 550px;
+            width: 100%;
+            position: relative;
+        }
+        h1 { margin-bottom: 5px; font-size: 26px; }
+        .subtitle { font-size: 13px; color: #7f8c8d; margin-top: 0; margin-bottom: 20px; }
+        .timer-banner {
+            background-color: #e67e22;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .stats-box {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+        }
+        .stat { font-size: 16px; font-weight: bold; }
+        #score { color: #27ae60; font-size: 20px; }
+        #current-yield { color: #2980b9; font-size: 20px; }
+        .tree-area {
+            font-size: 90px;
+            margin: 25px 0;
+            cursor: pointer;
+            transition: transform 0.1s ease;
+            user-select: none;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tree-area.shake { animation: shake 0.3s; }
+        @keyframes shake {
+            0% { transform: scale(1) rotate(0deg); }
+            20% { transform: scale(1.05) rotate(-3deg); }
+            40% { transform: scale(0.95) rotate(3deg); }
+            60% { transform: scale(1.02) rotate(-2deg); }
+            80% { transform: scale(0.98) rotate(1deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+        .controls { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
+        .travel-options { display: flex; justify-content: space-between; gap: 10px; }
+        .btn {
+            color: white; border: none; padding: 14px; font-size: 15px;
+            border-radius: 8px; cursor: pointer; font-weight: bold;
+            transition: all 0.2s; flex: 1;
+        }
+        .btn-harvest { background-color: #2ecc71; width: 100%; font-size: 18px; }
+        .btn-harvest:hover { background-color: #27ae60; }
+        .btn-short { background-color: #3498db; }
+        .btn-short:hover { background-color: #2980b9; }
+        .btn-long { background-color: #9b59b6; }
+        .btn-long:hover { background-color: #8e44ad; }
+        .btn:disabled { background-color: #bdc3c7; cursor: not-allowed; transform: none; }
+        #log { margin-top: 20px; font-size: 14px; color: #7f8c8d; min-height: 40px; font-style: italic; }
+        .overlay {
+            display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(255,255,255,0.96); border-radius: 16px;
+            z-index: 10; flex-direction: column; align-items: center;
+            justify-content: center; padding: 20px; box-sizing: border-box;
+        }
+        .overlay h2 { color: #c0392b; margin-bottom: 15px; }
+        .results-table { width: 100%; max-width: 400px; margin: 15px 0; border-collapse: collapse; text-align: left; }
+        .results-table th, .results-table td { padding: 10px; border-bottom: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- End Screen Overlay -->
+    <div id="end-overlay" class="overlay">
+        <h2>Simulation Finished</h2>
+        <p>The 3 minutes are up. Here is your behavioral analysis:</p>
+        <table class="results-table">
+            <tr>
+                <th>Total Apples Collected:</th>
+                <td id="res-score" style="font-weight:bold; color:#27ae60;">0</td>
+            </tr>
+            <tr>
+                <th>Total Trees Visited:</th>
+                <td id="res-trees">0</td>
+            </tr>
+            <tr>
+                <th>Avg. Exit Value (Short Travel):</th>
+                <td id="res-abandon-short">-</td>
+            </tr>
+            <tr>
+                <th>Avg. Exit Value (Long Travel):</th>
+                <td id="res-abandon-long">-</td>
+            </tr>
+        </table>
+        <p style="font-size:13px; color:#7f8c8d; max-width:400px;">
+            Note: According to foraging models, individuals optimizing energy intake leave patches when the local rate drops below the environment's average. Depressed individuals show altered decisional reference points.
+        </p>
+        <button class="btn btn-short" onclick="window.location.reload()" style="flex:none; padding:10px 20px;">Play Again</button>
+    </div>
+
+    <!-- Main Game -->
+    <h1>Apple Foraging Lab</h1>
+    <div class="subtitle">Behavioral Economics Model (Marginal Value Theorem)</div>
+
+    <div class="timer-banner">Time Remaining: <span id="time-left">03:00</span></div>
+
+    <div class="stats-box">
+        <div class="stat">Total Apples<br><span id="score">0</span></div>
+        <div class="stat">Current Tree Type<br><span id="tree-type" style="color:#7f8c8d;">Starting Tree</span></div>
+        <div class="stat">Next Shake Yield<br><span id="current-yield">10</span></div>
+    </div>
+
+    <div id="tree" class="tree-area">🌳</div>
+
+    <div class="controls">
+        <button id="harvest-btn" class="btn btn-harvest" onclick="harvest()">Shake Tree 🍎</button>
+        
+        <div class="travel-options">
+            <button id="btn-short" class="btn btn-short" onclick="travel(3, 10, 'Standard Tree')" disabled>
+                Short Travel (3s)<br><small>Yield: 10 Apples</small>
+            </button>
+            <button id="btn-long" class="btn btn-long" onclick="travel(10, 25, 'Super Tree')" disabled>
+                Long Travel (10s)<br><small>Yield: 25 Apples</small>
+            </button>
+        </div>
+    </div>
+
+    <div id="log">Click "Shake Tree" to start the experiment. Shaking has a 1-second handling time!</div>
+</div>
+<script>
+    // Game state variables
+    let totalScore = 0;
+    let currentYield = 10;
+    let isTraveling = false;
+    let isHarvesting = false; // New flag for handling time lockout
+    let gameActive = true;
+    let timerStarted = false; 
+    
+    // Statistics for final evaluation
+    let totalTreesVisited = 1;
+    let lastYieldBeforeLeave = 10;
+    let lastTreeType = 'Standard Tree';
+    
+    let shortTravelLeaves = [];
+    let longTravelLeaves = [];
+
+    // UI Elements
+    const treeEl = document.getElementById('tree');
+    const scoreEl = document.getElementById('score');
+    const yieldEl = document.getElementById('current-yield');
+    const treeTypeEl = document.getElementById('tree-type');
+    const logEl = document.getElementById('log');
+    const timeLeftEl = document.getElementById('time-left');
+    
+    const harvestBtn = document.getElementById('harvest-btn');
+    const btnShort = document.getElementById('btn-short');
+    const btnLong = document.getElementById('btn-long');
+    const endOverlay = document.getElementById('end-overlay');
+
+    let totalTime = 180; 
+    let countdown;
+
+    function startTimer() {
+        timerStarted = true;
+        btnShort.disabled = false;
+        btnLong.disabled = false;
+
+        countdown = setInterval(() => {
+            if (!gameActive) return;
+            
+            totalTime--;
+            let minutes = Math.floor(totalTime / 60);
+            let seconds = totalTime % 60;
+            timeLeftEl.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            if (totalTime <= 0) {
+                clearInterval(countdown);
+                endGame();
+            }
+        }, 1000);
+    }
+
+    function harvest() {
+        if (isTraveling || isHarvesting || !gameActive || currentYield <= 0) return;
+
+        if (!timerStarted) {
+            startTimer();
+        }
+
+        isHarvesting = true;
+        harvestBtn.disabled = true;
+        btnShort.disabled = true;
+        btnLong.disabled = true;
+
+        // Trigger visual shake animation
+        treeEl.classList.remove('shake');
+        void treeEl.offsetWidth; 
+        treeEl.classList.add('shake');
+
+        // Process actual harvest mechanics
+        let harvested = Math.max(1, Math.round(currentYield));
+        totalScore += harvested;
+        scoreEl.innerText = totalScore;
+        logEl.innerText = `Shaking tree... picked ${harvested} apple(s).`;
+
+        // Marginal yield reduction
+        currentYield = currentYield * 0.88;
+        lastYieldBeforeLeave = Math.round(currentYield);
+        yieldEl.innerText = lastYieldBeforeLeave;
+
+        // 1-second Handling Time Lockout
+        setTimeout(() => {
+            isHarvesting = false;
+            if (gameActive && !isTraveling) {
+                if (lastYieldBeforeLeave === 0) {
+                    logEl.innerText = "This tree is completely empty. You must travel to a new one!";
+                    harvestBtn.disabled = true;
+                } else {
+                    harvestBtn.disabled = false;
+                }
+                btnShort.disabled = false;
+                btnLong.disabled = false;
+            }
+        }, 1000);
+    }
+    function travel(seconds, baseReward, typeName) {
+        if (isTraveling || isHarvesting || !gameActive) return;
+
+        // Record leaving statistics
+        if (lastTreeType === 'Standard Tree') {
+            shortTravelLeaves.push(lastYieldBeforeLeave);
+        } else if (lastTreeType === 'Super Tree') {
+            longTravelLeaves.push(lastYieldBeforeLeave);
+        }
+
+        isTraveling = true;
+        setButtonsState(true);
+        
+        let timeLeft = seconds;
+        treeEl.innerText = "🚶‍♂️💨";
+        logEl.innerText = `Traveling through the area... New tree in ${timeLeft}s.`;
+
+        let travelTimer = setInterval(() => {
+            if (!gameActive) {
+                clearInterval(travelTimer);
+                return;
+            }
+            timeLeft--;
+            if (timeLeft > 0) {
+                logEl.innerText = `Traveling through the area... New tree in ${timeLeft}s.`;
+            } else {
+                clearInterval(travelTimer);
+                
+                currentYield = baseReward;
+                lastYieldBeforeLeave = baseReward;
+                lastTreeType = typeName;
+                totalTreesVisited++;
+
+                treeEl.innerText = typeName === 'Super Tree' ? '🌳✨' : '🌳';
+                treeTypeEl.innerText = typeName;
+                treeTypeEl.style.color = typeName === 'Super Tree' ? '#9b59b6' : '#2980b9';
+                yieldEl.innerText = currentYield;
+                logEl.innerText = `Arrived at a ${typeName} (Base: ${baseReward} apples)!`;
+                
+                isTraveling = false;
+                setButtonsState(false);
+            }
+        }, 1000);
+    }
+
+    function setButtonsState(disabled) {
+        harvestBtn.disabled = disabled;
+        btnShort.disabled = disabled;
+        btnLong.disabled = disabled;
+    }
+
+    function calculateAverage(arr) {
+        if (arr.length === 0) return "-";
+        let sum = arr.reduce((a, b) => a + b, 0);
+        return (sum / arr.length).toFixed(1) + " apples";
+    }
+
+    function endGame() {
+        gameActive = false;
+        setButtonsState(true);
+        
+        if (lastTreeType === 'Standard Tree') shortTravelLeaves.push(lastYieldBeforeLeave);
+        if (lastTreeType === 'Super Tree') longTravelLeaves.push(lastYieldBeforeLeave);
+
+        document.getElementById('res-score').innerText = totalScore;
+        document.getElementById('res-trees').innerText = totalTreesVisited;
+        document.getElementById('res-abandon-short').innerText = calculateAverage(shortTravelLeaves);
+        document.getElementById('res-abandon-long').innerText = calculateAverage(longTravelLeaves);
+
+        endOverlay.style.display = "flex";
+    }
+</script>
+</body>
+</html>
